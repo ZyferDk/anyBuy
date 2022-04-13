@@ -8,7 +8,7 @@ import IcCamer from "./hp-camera.png";
 import IcMenu from "./menu.png";
 import IcProfile from "./Profile.png";
 import IcSearch from "./Search.png";
-import IcSignIn from "./Sign In.png";
+import IcSignIn from "./SignIn.png";
 import IcGoogle from "./signIn-google.png";
 import IcSwitchCamera from "./switch-camera.png";
 import IcUnion from "./Union.png";

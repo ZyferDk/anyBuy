@@ -3,5 +3,7 @@ export const Color = {
   burntRed: "#9B1300",
   orangePeel: "#FF9701",
   sinopia: "#D23F07",
-  white:'#FFFFFF'
+  white: "#FFFFFF",
+  black: "#000",
+  grey: "#EBEAEC",
 };

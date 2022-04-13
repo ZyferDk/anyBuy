@@ -1,9 +1,17 @@
 import { View, Text } from "react-native";
 import React from "react";
 
-const Typhograpy = ({ color, size, children, fw }) => {
+const Typhograpy = ({ flex, color, size, children, fw, ta }) => {
   return (
-    <Text style={{ color: color, fontSize: size, fontWeight: fw }}>
+    <Text
+      style={{
+        flex: flex,
+        color: color,
+        fontSize: size,
+        fontWeight: fw,
+        textAlign: ta,
+      }}
+    >
       {children}
     </Text>
   );
