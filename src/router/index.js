@@ -1,7 +1,7 @@
 import { View, Text, SafeAreaView } from "react-native";
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { Dashboard, SignIn, ForgotPass } from "../pages";
+import { Dashboard, SignIn, ForgotPass, SignUp, Home } from "../pages";
 
 const Stack = createNativeStackNavigator();
 
@@ -19,6 +19,8 @@ const Router = () => {
         options={{ headerShown: false }}
       />
       <Stack.Screen name="ForgotPass" component={ForgotPass} />
+      <Stack.Screen name="SignUp" component={SignUp} />
+      <Stack.Screen name="Home" component={Home} />
     </Stack.Navigator>
   );
 };

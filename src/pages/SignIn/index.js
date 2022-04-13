@@ -22,19 +22,25 @@ const SignIn = ({ navigation }) => {
       <Gap height={15} />
       <Input placeholder={"Password"} />
       <Gap height={8} />
-      <Pressable onPress={() => console.log("makanya jangan pikun")}>
+      <Pressable onPress={() => navigation.navigate("ForgotPass")}>
         <Typhograpy size={14} fw="bold" ta={"right"}>
           Lupa Kata Sandi?
         </Typhograpy>
       </Pressable>
       <Gap height={8} />
-      <Button content="LOG IN" bgColor={Color.orangePeel} color={Color.white} />
+      <Button
+        onPress={() => navigation.navigate("SignUp")}
+        content="LOG IN"
+        bgColor={Color.orangePeel}
+        color={Color.white}
+      />
       <Gap height={8} />
       <Typhograpy size={14} fw="bold" color={"#A1A4B2"} ta={"center"}>
         OR
       </Typhograpy>
       <Gap height={8} />
       <Button
+        onPress={() => navigation.navigate("Home")}
         content="CONTINUE WITH GOOGLE"
         variant="icon"
         icon={IcGoogle}
