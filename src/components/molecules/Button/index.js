@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, Pressable, Image } from "react-native";
 import React from "react";
 import { Color } from "../../../utils/Colors";
-import { IcGoogle } from "../../../assets";
+import { IcChevronLeft, IcGoogle } from "../../../assets";
 import { HStack, Typhograpy } from "../../atoms";
 import Gap from "../Gap";
 
@@ -14,6 +14,12 @@ const Button = ({
   variant,
 }) => {
   switch (variant) {
+    case "back":
+      return (
+        <Pressable style={styles.back} onPress={() => navigation.goBack()}>
+          <Image source={IcChevronLeft} />
+        </Pressable>
+      );
     case "icon":
       return (
         <Pressable onPress={onPress}>
@@ -44,6 +50,15 @@ const styles = StyleSheet.create({
     paddingVertical: 25,
     borderRadius: 38,
   }),
+  back: {
+    width: 55,
+    height: 55,
+    borderWidth: 1,
+    borderRadius: 55,
+    justifyContent: "center",
+    alignItems: "center",
+    borderColor: "#EBEAEC",
+  },
   text: (color) => ({
     color: color,
     fontWeight: "bold",
