@@ -1,4 +1,4 @@
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, ScrollView } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { styles } from "./style";
@@ -6,7 +6,7 @@ import { IcLogo, IntroImg } from "../../assets";
 import { HStack, Typhograpy, Button, Gap } from "../../components";
 import { Color } from "../../utils/Colors";
 
-const Dashboard = () => {
+const Dashboard = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.page}>
       <View style={styles.container}>
@@ -24,7 +24,10 @@ const Dashboard = () => {
         <Image source={IntroImg} style={styles.intro} />
       </View>
       <View style={styles.footer}>
-        <Button content={'GET STARTED'} />
+        <Button
+          content={"GET STARTED"}
+          onPress={() => navigation.navigate("SignIn")}
+        />
       </View>
     </SafeAreaView>
   );

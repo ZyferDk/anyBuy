@@ -2,9 +2,14 @@ import { View, Text, StyleSheet, Pressable } from "react-native";
 import React from "react";
 import { Color } from "../../../utils/Colors";
 
-const Button = ({ bgColor = "white", color = Color.orangePeel, content }) => {
+const Button = ({
+  onPress,
+  bgColor = "white",
+  color = Color.orangePeel,
+  content,
+}) => {
   return (
-    <Pressable style={styles.page(bgColor)}>
+    <Pressable onPress={onPress} style={styles.page(bgColor)}>
       <Text style={styles.text(color)}>{content}</Text>
     </Pressable>
   );
