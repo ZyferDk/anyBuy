@@ -69,11 +69,12 @@ const SignIn = ({ navigation }) => {
 
 export default SignIn;
 
-const signIn = StyleSheet.create({
+export const signIn = StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 12,
     paddingVertical: 6,
+    backgroundColor: Color.white,
   },
   imgContainer: {
     marginTop: -40,

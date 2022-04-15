@@ -16,7 +16,7 @@ const Button = ({
   switch (variant) {
     case "back":
       return (
-        <Pressable style={styles.back} onPress={() => navigation.goBack()}>
+        <Pressable style={styles.back} onPress={onPress}>
           <Image source={IcChevronLeft} />
         </Pressable>
       );

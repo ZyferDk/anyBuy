@@ -18,8 +18,16 @@ const Router = () => {
         component={SignIn}
         options={{ headerShown: false }}
       />
-      <Stack.Screen name="ForgotPass" component={ForgotPass} />
-      <Stack.Screen name="SignUp" component={SignUp} />
+      <Stack.Screen
+        name="ForgotPass"
+        component={ForgotPass}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="SignUp"
+        component={SignUp}
+        options={{ headerShown: false }}
+      />
       <Stack.Screen name="Home" component={Home} />
     </Stack.Navigator>
   );
